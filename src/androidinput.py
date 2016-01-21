@@ -11,7 +11,6 @@ from src import config
 # Choose device
 def chooseDevice():
     proc = subprocess.Popen(config.adb + 'devices -l', stdout=subprocess.PIPE, shell=True)
-    # todo: parse output to provide change interface like '1: devId devName'
     deviceList = str.split(proc.stdout.read().decode("utf-8"), '\r\n')[1:-2]
     i = 0
     deviceIds = []
