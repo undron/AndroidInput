@@ -1,8 +1,9 @@
+import glob
+import os
 import subprocess
 import time
-import os
-import glob
-import config
+
+from src import config
 
 
 # todo: to add check if few devices is connected, but chosen none
